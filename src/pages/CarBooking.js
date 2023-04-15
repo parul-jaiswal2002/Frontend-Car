@@ -50,8 +50,8 @@ const CarBooking = () => {
 
     useEffect(() => {
        const fetchcars = async () => {
-           const response = await fetch('/carRental/car/carDetails')
-           const destAndOrigin = await fetch('/carRental/car/getbookingdetails')
+           const response = await fetch('https://car-rental-backend-13ii.onrender.com/carRental/car/carDetails')
+           const destAndOrigin = await fetch('https://car-rental-backend-13ii.onrender.com/carRental/car/getbookingdetails')
            const json2 = await destAndOrigin.json()
            const json = await response.json()
            if(response.ok){

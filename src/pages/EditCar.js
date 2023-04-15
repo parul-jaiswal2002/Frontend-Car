@@ -68,7 +68,7 @@ function EditCar(singlecar) {
     // navigate('/admin')
   };
   const Deletedata = () => {
-    axios.delete(`/carRental/car/deleteCar/${singlecar.singlecar._id}`, (formdata))
+    axios.delete(`https://car-rental-backend-13ii.onrender.com/carRental/car/deleteCar/${singlecar.singlecar._id}`, (formdata))
       .then((resp) => {
         resp.json();
       })

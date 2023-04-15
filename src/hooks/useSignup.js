@@ -12,7 +12,7 @@ export const useSignup = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('/carRental/user/signup', {
+        const response = await fetch('https://car-rental-backend-13ii.onrender.com/carRental/user/signup', {
             method : 'POST',
             headers : {'Content-Type' : 'application/json'},
             body : JSON.stringify({email, password})

@@ -15,7 +15,7 @@ export const useAdmin = () => {
 
 
         if(email === 'admin@gmail.com' && password === 'abcABC!123'){
-        const response = await fetch('/carRental/admin/login', {
+        const response = await fetch('https://car-rental-backend-13ii.onrender.com/carRental/admin/login', {
             method : 'POST',
             headers : {'Content-Type' : 'application/json'},
             body : JSON.stringify({email, password})//body m jo pass kr rhe h use json m to change krna pdega na

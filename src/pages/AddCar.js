@@ -53,7 +53,7 @@ function AddCar() {
             });
     };
     const Submitdata = () => {
-        axios.post("http://localhost:5000/carRental/car/addcar", (formdata))
+        axios.post("https://car-rental-backend-13ii.onrender.com/carRental/car/addcar", (formdata))
             .then((res) => res.json())
             .then((data) => {
                 console.log(data)

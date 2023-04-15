@@ -12,7 +12,7 @@ export const useLogin = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('/carRental/user/login', {
+        const response = await fetch('https://car-rental-backend-13ii.onrender.com/carRental/user/login', {
             method : 'POST',
             headers : {'Content-Type' : 'application/json'},
             body : JSON.stringify({email, password})//body m jo pass kr rhe h use json m to change krna pdega na

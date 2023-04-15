@@ -14,7 +14,7 @@ const Quote = () => {
     const handleCheck =  async (e) =>{
         e.preventDefault()
         // const destAndOrigin = {...state}
-        const response = await fetch('/carRental/car/bookingdetails',{   // or yha post request se fetch krenge
+        const response = await fetch('https://car-rental-backend-13ii.onrender.com/carRental/car/bookingdetails',{   // or yha post request se fetch krenge
             method : "POST",
             body : JSON.stringify(state),
             headers : {

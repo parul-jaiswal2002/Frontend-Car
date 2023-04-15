@@ -19,7 +19,7 @@ const Admin = () => {
     const {cars, dispatch} = useAdminCarContext()
     useEffect(() => {
         const fetchcars = async () => {
-            const response = await fetch('/carRental/car/adminpageCars')
+            const response = await fetch('https://car-rental-backend-13ii.onrender.com/carRental/car/adminpageCars')
             const json = await response.json()
             if(response.ok){
               dispatch({type : 'SET_ADMIN_CAR', payload : json})
